@@ -20,8 +20,8 @@ export default function Chair(props) {
   } = useThree();
   const { nodes, materials } = useGLTF("/chair.glb");
 let model = scene.children[6]
-// model.userData.draggable = true
-// model.userData.name = "Chair"
+model.userData.draggable = true
+model.userData.name = "Chair"
 
 const moveMouse = new THREE.Vector2();
 const draggable = new THREE.Vector3();
